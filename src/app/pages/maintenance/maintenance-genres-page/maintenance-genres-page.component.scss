@@ -1,0 +1,25 @@
+@use '../../../commons/styles/colors.scss';
+.content {
+	.crud {
+		padding: 2em;
+		justify-content: center;
+		align-items: center;
+
+		&__elements {
+			display: flex;
+			gap: 2em;
+			justify-content: space-between;
+			width: 70%;
+
+			.fields {
+				gap: 10px;
+				width: 100%;
+			}
+			
+		}
+	}
+
+	.list {
+		padding: 2em;
+	}
+}

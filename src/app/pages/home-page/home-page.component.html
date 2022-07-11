@@ -1,0 +1,14 @@
+<div class="filter">
+	<mat-form-field appearance="outline">
+		<mat-label>{{ genre }} </mat-label>
+		<mat-select>
+			<mat-option *ngFor="let item of listGenres"> {{ item.description | uppercase }} </mat-option>
+		</mat-select>
+	</mat-form-field>
+
+	<h4 #genreTitle>Selecciona tu género musical favorito</h4>
+</div>
+
+<div class="cards">
+	<app-card-event [event]="item" (clickCard)="clickCard($event)" *ngFor="let item of listEvents"></app-card-event>
+</div>
